@@ -1,0 +1,268 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    background-color: rgb(11, 19, 30)
+}
+.container {
+    width: 100%;
+    display: flex;
+    margin: 20px;
+}
+.container .menu {
+    width: 120px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:  rgb(26,37,66);
+    border: 1px solid transparent;
+    border-radius: 20px;
+    
+}
+.container .menu img {
+    width: auto;
+    height: 50px;
+    padding: 50px;
+}
+.container .menu .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.container .menu .list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.container .menu .list ul a {
+    text-decoration: none;
+    color: #c9c4c4; 
+}
+.container .menu .list ul a i {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .menu .list ul a span {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-size: 20px;
+}
+.container .main {
+    width: 600px;
+    height: calc(100vh -50px -200px -150px -150px );
+    margin: 0 20px;
+}
+.container .main .search input {
+    width: 600px;
+    height: 50px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(26, 37, 66);
+}
+.container .main .now {
+    margin-top: 10px;
+    height: 200px;
+    display: flex;
+    gap: 100px;
+}
+.container .main .now .content {
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    padding: 30px 0 30px 100px;
+}
+.container .main .now .content span{
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.container .main .now .photo img {
+    width: auto;
+    height: 150px;
+    padding: 30px 0  30px 100px;
+}
+.container .main .today {
+    height: 150px;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(26,37,66);
+}
+.container .main .today h1 {
+    font-size: 20px;
+    color: gray;
+}
+.container .main .today .hours {
+    display: flex;
+    flex-direction: row;
+}
+.container .main .today .hours .hour {
+    width:100px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid #ccc;
+}
+.container .main .today .hours .hour-6 {
+    display: flex;
+    border: 1px solid transparent;
+}
+.container .main .today .hours .hour {
+    color: white;
+}
+.container .main .today .hours .hour span {
+    color: rgb(209, 199, 199);
+    font-size: 16px;
+}
+.container .main .today .hours .hour img {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+.container .main .condition {
+    height: 150px;
+    padding: 20px;
+    background-color: rgb(26, 37, 66);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.container .main .condition .name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .main .condition .name h1 {
+    font-size: 18px;
+    color: gray;
+}
+.container .main .condition .name button {
+    padding: 0 5px;
+    height: 20px;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    background-color: rgb(60, 147, 247);
+    color: white;
+}
+.container .main .condition .infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .main .condition .infos .info {
+    display: flex;
+    align-items: start;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    gap: 10px;
+
+}
+.container .main .condition .infos .info .write {
+    display: flex;
+    flex-direction: column;
+    color: #ccc;
+    
+}
+.container .main .condition .infos .info .write i {
+    font-size: 20px;
+}
+.container .main .condition .infos .info .write p {
+    color: #ccc;
+    
+}
+.container .main .condition .infos .info .write span {
+    color: white;
+    font-size: 20px;
+}
+.container .right-side {
+    margin-top: 90px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgb(26, 37, 66);
+    width: 550px;
+
+}
+.container .right-side h1 {
+    padding: 20px 0 0 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: gray;
+}
+.container .right-side .days {
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+
+}
+.container .right-side .days .day {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 1px solid #ccc;
+    width: 300px;
+    height: 50px;
+    color: gray;
+}
+.container .right-side .days .day p{
+    font-size: 24px;
+    color: #ccc;
+}
+.container .right-side .days .day span {
+    color: rgb(175, 167, 167);
+}
+.container .right-side .days .day img {
+    width: 50px;
+    height: 50px;
+}
+.container .right-side .days .day-7 {
+    border: transparent;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+   background: #555;
+  }
